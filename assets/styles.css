@@ -1,0 +1,39 @@
+/* Created by Kristina Russell - 12/4/2023 - kristina_russell@student.uml.edu */
+* {
+	box-sizing: border-box;
+}
+.column1 {
+    float: left;
+    width: 15%;
+    min-width: 220px;
+    padding: 10px;
+    height: 300px; 
+}
+.column2 {
+    float: left;
+    padding: 10px;
+    height: 300px; 
+}
+#rangeForm {
+    border-style: double;
+    margin: 10px;
+    padding: 10px;
+}
+th {
+    font-weight: normal;
+}
+table, td, tr {
+    padding: 15px;
+    text-align:center;
+    border: 1px solid;
+}
+/* This helps to control the size and margins around each slider so they dont get squished */
+#minCSlider, #maxCSlider, #minRSlider, #maxRSlider {
+    width: 90%;
+    margin: 10px;
+}
+/* makes the slider handle large enough to grab lol */
+.ui-slider-handle {
+    width: 20px;
+    height: 20px;
+}

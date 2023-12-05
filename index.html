@@ -1,0 +1,53 @@
+<!-- Created by Kristina Russell - 12/4/2023 - kristina_russell@student.uml.edu -->
+<!-- CDNs were found and used via the jsdelivr database or each libraries documentation -->
+<!-- https://www.jsdelivr.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dynamic Table</title>
+    <meta charset="utf-8">
+
+    <!-- imports the jQuery and jQuery Validation libs -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js "></script>
+    <!-- using the add-methods lib helps support the range field used in the jQuery Validation-->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <!-- imports the jQuery ui libs -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link href="assets/styles.css" rel="stylesheet">
+    <script src="assets/scriptQuery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <header>
+                <h1>Dynamic Table</h1>
+            </header>
+            <div class="column1">
+                <div id="rangeForm">
+                    <p>Please enter ranges between -50 to 50 for the multiplication table</p>
+                    <form id="ColRowForm">
+                        Minimum Column Value:<br> <input type="number" name="MinCol" id="MinCol"><br>
+                        <div id="minCSlider"></div>
+                        Maxiumum Column Value:<br> <input type="number" name="MaxCol" id="MaxCol"><br>
+                        <div id="maxCSlider"></div>
+                        Minimum Row Value:<br> <input type="number" name="MinRow" id="MinRow"><br>
+                        <div id="minRSlider"></div>
+                        Maximum Row Value:<br> <input type="number" name="MaxRow" id="MaxRow"><br><br>
+                        <div id="maxRSlider"></div>
+                        <input type="button" value="Submit" id="submitForm">
+                    </form>
+                </div>
+            </div>
+            <div id="column2">
+                <div id="tabs">
+                    <table id="table" rules="all"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
